@@ -1,0 +1,21 @@
+.navbar {
+  font-size: large;
+  font-weight: 200;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.navbar-brand {
+  color: white;
+}
+.navbar-brand:hover {
+  color: #FFCC33;
+}
+
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: #FFCC33;
+}
