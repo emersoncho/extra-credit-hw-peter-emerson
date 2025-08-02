@@ -62,21 +62,21 @@ function SurveyResults() {
           {results.map(result => (
             <tr key={result.id}>
               <td className="id-row">{result.id}</td>
-              <td>{result.stu_first}</td>
-              <td>{result.stu_last}</td>
-              <td>{result.stu_street}</td>
-              <td>{result.stu_city}</td>
-              <td>{result.stu_state}</td>
-              <td>{result.stu_zip}</td>
-              <td>{result.stu_phone}</td>
-              <td>{result.stu_email}</td>
-              <td>{result.survey_date}</td>
-              <td>{result.stu_gradmonth}</td>
-              <td>{result.stu_gradyear}</td>
-              <td>{result.stu_likedmost}</td>
-              <td>{result.stu_interestsource}</td>
-              <td>{result.stu_likelihood}</td>
-              <td>{result.additional_comments}</td>
+              <td>{result.first_name}</td>
+              <td>{result.last_name}</td>
+              <td>{result.street_address}</td>
+              <td>{result.city}</td>
+              <td>{result.state}</td>
+              <td>{result.zip}</td>
+              <td>{result.telephone}</td>
+              <td>{result.email}</td>
+              <td>{result.date_of_survey}</td>
+              <td>{result.graduation_month}</td>
+              <td>{result.graduation_year}</td>
+              <td>{result.likedmost}</td>
+              <td>{result.interest_source}</td>
+              <td>{result.likelihood}</td>
+              <td>{result.comments}</td>
               <td className="actions">
                 <button onClick={() => editResult(result.id)}>Edit</button>
                 <button onClick={() => deleteResult(result.id)}>Delete</button>

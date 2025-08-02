@@ -1,7 +1,13 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:6420/api/surveys'; // Backend API base URL
+//const API_URL = 'http://localhost:6420/api/surveys'; // Backend API base URL
+const API_URL = 'http://127.0.0.1:5000/surveys'
 
+axios.defaults.headers.post['Access-Control-Allow-Origin'] = '*';
+const headers = {
+        'Content-Type': 'application/json;charset=utf-8',
+        'Access-Control-Allow-Origin':'http://127.0.0.1:5000/surveys'
+    };
 const apiService = {
   getAllSurveys: async () => {
     try {
@@ -25,7 +31,7 @@ const apiService = {
 
   addSurvey: async (surveyData) => {
     try {
-      const response = await axios.post(API_URL, surveyData);
+      const response = await axios.post(API_URL, surveyData, {headers});
       return response.data;
     } catch (error) {
       console.error('Error adding new survey:', error);
