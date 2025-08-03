@@ -11,7 +11,7 @@ const headers = {
 const apiService = {
   getAllSurveys: async () => {
     try {
-      const response = await axios.get(API_URL);
+      const response = await axios.get(API_URL, headers);
       return response.data;
     } catch (error) {
       console.error('Error fetching surveys:', error);
