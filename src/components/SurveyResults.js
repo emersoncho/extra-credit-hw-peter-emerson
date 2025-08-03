@@ -73,7 +73,7 @@ function SurveyResults() {
               <td>{result.date_of_survey}</td>
               <td>{result.graduation_month}</td>
               <td>{result.graduation_year}</td>
-              <td>{result.likedmost}</td>
+              <td>{result.liked_most}</td>
               <td>{result.interest_source}</td>
               <td>{result.likelihood}</td>
               <td>{result.comments}</td>
