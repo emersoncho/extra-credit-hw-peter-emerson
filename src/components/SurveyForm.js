@@ -164,7 +164,7 @@ function SurveyForm() {
                 {/* Street Address */}
                 <div className="col-md-8">
                     <label className="form-label" htmlFor="stu_street">Street Address<span className="text-danger">*</span></label>
-                    <input type="text" name="stu_street" className="form-control" value={surveyForm.street} onChange={handleChange} placeholder="123 Main St" required />
+                    <input type="text" name="stu_street" className="form-control" value={surveyForm.stu_street} onChange={handleChange} placeholder="123 Main St" required />
                 </div>
             </div>
 
